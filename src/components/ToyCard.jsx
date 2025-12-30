@@ -25,7 +25,7 @@ export default function ToyCard({ toy, onAdd }) {
     <article className="book-card toy-card" aria-labelledby={`title-${toy._id || toy.id}`}>
       <div className="card-top">
         <div className="cover">
-          <img src={`/src/assets/${toy.image}`} alt={`${toy.title || toy.name} cover`} loading="lazy" />
+          <img src={toy.image} alt={`${toy.title || toy.name} cover`} loading="lazy" />
         </div>
       </div>
       <div className="card-body">
